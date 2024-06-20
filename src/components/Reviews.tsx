@@ -7,12 +7,12 @@ import { cn } from '@/lib/utils'
 import Phone from './Phone'
 
 const PHONES = [
-    '/logo cutiestuff.png',
+    '/Testimonials/1.jpg',
     'https://i.pinimg.com/originals/48/a3/31/48a331e2c34ab79d1a7e443eb83c135d.jpg',
-    '/testimonials/3.jpg',
-    '/testimonials/4.jpg',
-    '/testimonials/5.jpg',
-    '/testimonials/6.jpg',
+    'https://rare-gallery.com/mocahbig/1383670-Naruto-Uzumaki-Anime-Six-Paths-Sage-Mode.jpg',
+    'https://i.pinimg.com/originals/dc/f2/a9/dcf2a966a98fa4721af2829b18654e29.jpg',
+    'https://avatarfiles.alphacoders.com/164/164791.jpg',
+    'https://images.fanpop.com/images/image_uploads/Apple-Logo-apple-41149_1600_1200.jpg',
 ]
 
 function splitArray<T>(array: Array<T>, numParts: number) {
