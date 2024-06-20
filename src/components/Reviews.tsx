@@ -7,8 +7,8 @@ import { cn } from '@/lib/utils'
 import Phone from './Phone'
 
 const PHONES = [
-    '/testimonials/1.jpg',
-    '/testimonials/2.jpg',
+    '/logo cutiestuff.png',
+    'https://i.pinimg.com/originals/48/a3/31/48a331e2c34ab79d1a7e443eb83c135d.jpg',
     '/testimonials/3.jpg',
     '/testimonials/4.jpg',
     '/testimonials/5.jpg',
