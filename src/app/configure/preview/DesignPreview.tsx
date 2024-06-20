@@ -105,7 +105,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
                             <li>Wireless charging compatible</li>
                             <li>TPU shock absorption</li>
                             <li>Packaging made from recycled materials</li>
-                            <li>5 year print warranty</li>
+                            <li>1 year print warranty</li>
                         </ol>
                     </div>
                     <div>
