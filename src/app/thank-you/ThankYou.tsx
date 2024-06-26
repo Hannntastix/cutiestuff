@@ -49,7 +49,7 @@ const ThankYou = () => {
         <div className='bg-white'>
             <div className='mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8'>
                 <div className='max-w-xl'>
-                    <img src="/logo Cutiestuff.png" alt="" className='w-1/2 h-1/2 mx-auto'/>
+                    <img src="/logo cutiestuff.png" alt="" className='w-1/2 h-1/2 mx-auto'/>
                     <p className='text-3xl font-medium text-primary'>Thank you!</p>
                     <h1 className='mt-2 text-4xl font-bold tracking-tight sm:text-5xl'>Your case is on the way</h1>
                     <p className='mt-2 text-base text-zinc-500'>We've received your order and are now processing it.</p>
