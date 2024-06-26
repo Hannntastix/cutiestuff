@@ -1,17 +1,17 @@
-import { db } from "@/db"
-import { stripe } from "@/lib/stripe"
-import { headers } from "next/headers"
-import { NextResponse } from "next/server"
-import Stripe from "stripe"
-import { Resend } from "resend"
-import OrderReceivedEmail from "@/components/emails/OrderReceivedEmail"
+import { db } from '@/db'
+import { stripe } from '@/lib/stripe'
+import { headers } from 'next/headers'
+import { NextResponse } from 'next/server'
+import Stripe from 'stripe'
+import { Resend } from 'resend'
+import OrderReceivedEmail from '@/components/emails/OrderReceivedEmail'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: Request) {
     try {
         const body = await req.text()
-        const signature = headers().get("stripe-signature")
+        const signature = headers().get('stripe-signature')
 
         if (!signature) {
             return new Response('Invalid signature', { status: 400 })
@@ -23,7 +23,7 @@ export async function POST(req: Request) {
             process.env.STRIPE_WEBHOOK_SECRET!
         )
 
-        if (event.type === "checkout.session.completed") {
+        if (event.type === 'checkout.session.completed') {
             if (!event.data.object.customer_details?.email) {
                 throw new Error('Missing user email')
             }
@@ -36,7 +36,7 @@ export async function POST(req: Request) {
             }
 
             if (!userId || !orderId) {
-                throw new Error("Invalid request metadata")
+                throw new Error('Invalid request metadata')
             }
 
             const billingAddress = session.customer_details!.address
@@ -71,11 +71,10 @@ export async function POST(req: Request) {
                 },
             })
 
-
             await resend.emails.send({
-                from: "CutieStuff <rehan121203@gmail.com>",
+                from: 'CutieStuff <rehan121203@gmail.com>',
                 to: [event.data.object.customer_details.email],
-                subject: "Thanks for your order!",
+                subject: 'Thanks for your order!',
                 react: OrderReceivedEmail({
                     orderId,
                     orderDate: updatedOrder.createdAt.toLocaleDateString(),
@@ -87,8 +86,8 @@ export async function POST(req: Request) {
                         postalCode: shippingAddress!.postal_code!,
                         street: shippingAddress!.line1!,
                         state: shippingAddress!.state,
-                    }
-                })
+                    },
+                }),
             })
         }
 
@@ -97,7 +96,7 @@ export async function POST(req: Request) {
         console.error(err)
 
         return NextResponse.json(
-            { message: "Something went wrong", ok: false },
+            { message: 'Something went wrong', ok: false },
             { status: 500 }
         )
     }
