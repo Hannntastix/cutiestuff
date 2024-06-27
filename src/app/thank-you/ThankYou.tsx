@@ -65,10 +65,9 @@ const ThankYou = () => {
                     <div className='mt-10 flex flex-auto flex-col'>
                         <h4 className='font-semibold text-zinc-900'>You made a great choice!</h4>
                         <p className='mt-2 text-sm text-zinc-600'>
-                            We at Cutiestuff believe that a phone case doesn't only need to lood good,
-                            but also last you for the years to come.
-                            We offer a 1-year print guarantee: If your case isn't of the highest quality,
-                            we wil replace it for free.
+                        At CutieStuff, we are dedicated to ensuring that our phone cases not only look stylish but also stand up to the wear and tear of daily use. 
+                        We back this commitment with our 1-year print guarantee: if your case does not maintain its high-quality appearance and durability within the first year, 
+                        we will gladly replace it at no cost to you. Our goal is to provide you with a phone case that you can rely on and enjoy for years to come.
                         </p>
                     </div>
                 </div>

@@ -32,12 +32,11 @@ export default function Home() {
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-20 font-bold
               !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
-                Your Image on a <span className="bg-pink-400 px-2 rounded-xl text-white">Custom</span> iPhone Case
+                Your Favourite Image on a <span className="bg-pink-400 px-2 rounded-xl text-white">Custom</span> iPhone Case
               </h1>
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
-                Capture your favourite memories with your own, <span
-                  className="font-semibold">one-of-one</span> iPhone case.
-                CutieStuff allows you to protect your memories, not just your iPhone case.
+                Turn your memories into a masterpiece with CutieStuff – your <span
+                  className="font-semibold">one-of-a-kind iPhone case</span>, made just for you.
               </p>
 
               <ul className="mt-8 space-y-2 text-left font-medium flex
@@ -126,13 +125,13 @@ export default function Home() {
               </div>
               <div className='text-lg leading-8'>
                 <p>
-                  "The case feels durable and I even got a compliment on the
-                  design. Had the case for two and a half months now and{' '}
+                  "The case feels incredibly sturdy, and I've received multiple compliments on its design. 
+                  I've had it for two and a half months now, and{' '}
                   <span className='p-0.5 bg-slate-800 text-white'>
-                    the image is super clear
+                  the image remains super clear
                   </span>
-                  , on the case I had before, the image started fading into
-                  yellow-ish color after a couple weeks. Love it."
+                  . nlike my previous case, which started fading to a yellowish color after just a few weeks, 
+                  this one still looks brand new. Absolutely love it!"
                 </p>
               </div>
               <div className='flex gap-4 mt-2'>

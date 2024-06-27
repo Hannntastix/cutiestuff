@@ -28,6 +28,13 @@ const Navbar = async () => {
                             }>
                                 Dashboard ✨
                             </Link> : null}
+                                <Link href="/" className={buttonVariants
+                                    ({
+                                        size: "sm", variant: "ghost",
+                                    })
+                                }>
+                                    Home
+                                </Link>
                                 <Link href="/api/auth/logout" className={buttonVariants
                                     ({
                                         size: "sm", variant: "ghost",
